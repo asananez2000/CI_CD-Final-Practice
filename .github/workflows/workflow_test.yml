@@ -69,6 +69,9 @@ jobs:
       - name: Zip src directory
         run: zip -r test_package.zip . -i app/
         
+      - name: Check zip size
+        run: du -sh test_package.zip
+        
       - name: Upload zip
         uses: actions/upload-artifact@v3
         with:

@@ -52,7 +52,7 @@ jobs:
         
     - name: Test with pytest
       run: |
-        coverage run -m pytest app/src/
+        coverage run -m pytest app/
         coverage report
         coverage html -d cc_report/
         
